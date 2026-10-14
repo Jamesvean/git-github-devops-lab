@@ -12,7 +12,9 @@ def home():
 @app.route("/health")
 def health():
     return jsonify({
-        "status": "healthy"
+        "status": "healthy",
+        "service": "flask-devops-lab",
+        "version": "1.1"
     }), 200
 
 if __name__ == "__main__":
